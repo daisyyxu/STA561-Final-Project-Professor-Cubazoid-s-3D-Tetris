@@ -1,0 +1,26 @@
+case,expected,actual,runtime_sec,passed,notes
+01_2x2x2_two_tetracubes,solved,solved,0.0017,True,Two complementary tetracubes forming a 2x2x2.
+02_2x2x2_penta_plus_tri,solved,solved,0.0017,True,2x2x2 split as 5 + 3 cubes.
+03_3x3x3_random_partition_s42,solved,solved,0.0062,True,Randomly-generated 3x3x3 partition (seed=42); mixed piece sizes.
+04_3x3x3_soma,solved,solved,0.0063,True,Classical 7-piece Soma cube.
+05_3x3x3_random_partition_s0,solved,solved,0.0082,True,Randomly-generated 3x3x3 partition (seed=0).
+06_3x3x3_random_partition_s7,solved,solved,0.0062,True,Randomly-generated 3x3x3 partition (seed=7).
+07_4x4x4_random_partition_s5,solved|timeout,solved,0.0511,True,Randomly-generated 4x4x4 partition (seed=5); mixed piece sizes.
+08_4x4x4_sixteen_L_tetracubes,solved,solved,0.0151,True,Sixteen flat L-tetracubes — classic tiling.
+09_4x4x4_sixteen_T_tetracubes,solved,solved,0.016,True,Sixteen flat T-tetracubes (four per 4x4x1 slab).
+10_4x4x4_sixteen_O_tetracubes,solved,solved,0.013,True,Sixteen 2x2x1 squares.
+11_4x4x4_mixed_LTS,parity_rejected,parity_rejected,0.0033,True,Sixteen mixed flat tetracubes (6 L + 5 T + 5 S) — parity infeasible.
+12_4x4x4_random_partition_s1,solved|timeout,solved,0.0155,True,Randomly-generated 4x4x4 partition (seed=1).
+13_4x4x4_random_partition_s3,solved|timeout,solved,0.0143,True,Randomly-generated 4x4x4 partition (seed=3).
+14_5x5x5_random_partition_s11,solved|timeout,solved,2.8845,True,Randomly-generated 5x5x5 partition (seed=11); mixed piece sizes.
+15_5x5x5_random_partition_s0,solved|timeout,solved,0.0307,True,Randomly-generated 5x5x5 partition (seed=0).
+16_5x5x5_random_partition_s2,solved|timeout,solved,4.1859,True,Randomly-generated 5x5x5 partition (seed=2).
+17_invalid_volume_not_cube,invalid_volume,invalid_volume,0.0001,True,Total volume is 7 — not a perfect cube.
+18_no_solution_wrong_shapes_2x2x2,no_solution|timeout,no_solution,0.0017,True,Two flat L-tetracubes can't tile a 2x2x2 (need 3D footprint).
+19_no_solution_I5s_in_3x3x3,no_solution|timeout,no_solution,0.0048,True,"Volume 27 passes (3×5 + 3×4), but length-5 rods cannot fit in a 3-cube."
+20_invalid_disconnected_piece,invalid_input,invalid_input,0.0,True,Piece has two disconnected cells.
+21_invalid_empty_list,invalid_input,invalid_input,0.0,True,Empty piece list.
+22_invalid_non_binary,invalid_input,invalid_input,0.0,True,Piece tensor has a value != 0/1.
+23_invalid_not_3d,invalid_input,invalid_input,0.0,True,"Piece is a 2D tensor, not 3D."
+24_4x4x4_random_partition_s17,solved|timeout,solved,0.0504,True,Randomly-generated 4x4x4 partition (seed=17); another diverse mix.
+25_3x3x3_mixed_pentatri,solved,solved,0.0064,True,3x3x3 partitioned with mixed tri/tetra/pentacubes.
